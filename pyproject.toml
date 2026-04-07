@@ -1,0 +1,18 @@
+[project]
+name = "sentence-to-words"
+version = "0.1.0"
+description = "A CLI tool that tokenizes English sentences and shows each word's position and lemma"
+license = "MIT"
+readme = "README.md"
+requires-python = ">=3.9"
+dependencies = [
+    "nltk>=3.9",
+]
+
+[project.scripts]
+sentence-to-words = "main:main"
+
+[dependency-groups]
+dev = [
+    "pytest>=8.4.2",
+]
